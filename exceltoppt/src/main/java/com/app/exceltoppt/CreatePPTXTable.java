@@ -34,8 +34,6 @@ public class CreatePPTXTable {
 		
 
 		  XMLSlideShow ppt = new XMLSlideShow();
-
-		  
 		  
 		  //getting the slide master object
 	      XSLFSlideMaster slideMaster = ppt.getSlideMasters().get(0);

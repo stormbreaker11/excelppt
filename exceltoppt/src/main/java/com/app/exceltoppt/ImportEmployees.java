@@ -13,10 +13,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-
 public class ImportEmployees {
-
-	
 
 	public static void readExcel() throws IOException {
 
@@ -33,6 +30,7 @@ public class ImportEmployees {
 			requiredHeaders.put(cell.getStringCellValue(), cell.getColumnIndex());
 		}
 
+		// Reading data by column name
 		java.util.List<Employee> employees = new ArrayList<>();
 		for (int i = 1; i <= sheet.getLastRowNum(); i++) {
 			Row row = sheet.getRow(i);
